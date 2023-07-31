@@ -40,18 +40,16 @@ Prune 후 성능지표
 
 ## PR curve
 
+![KakaoTalk_20230729_005518984](https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/4e8a756d-8ea0-4b15-9084-d7f03682a524)
 
-![PR_curve](https://github.com/nagoriyouki/yolov5_prune_bollard/assets/130470442/e3396c86-dc22-48d9-9cee-351830e24146)
+## P-curve
+![KakaoTalk_20230729_005518984_01](https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/5df60d7a-a121-4033-9c9e-ce81400d43ef)
 
-
-
-## confusion_matrix
-
-![confusion_matrix](https://github.com/nagoriyouki/yolov5_prune_bollard/assets/130470442/714ec37a-93e0-450c-9e8c-99844b578c54)
+## Result
+![KakaoTalk_20230729_051727539](https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/472caaa5-f706-4c17-9ebe-05f15caab0a7)
 
 
 # 실행방법
-- python detect.py source --0 --data (data.yaml의 경로) --cfg (yolov5s.yaml의 경로) --weights (yolov5s.pt의 경로) --batch-size 16 --epochs 50
-
+- python detect.py --source 0 --weights runs/train/exp6/weights/best.pt --data (data.yaml 경로)
 
 기존 모델 출처: https://github.com/ultralytics/yolov5
