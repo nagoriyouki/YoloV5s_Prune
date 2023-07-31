@@ -35,11 +35,7 @@
 
 Prune 후 성능지표
 -
--Precision: 0.784
-
--Recall: 0.77
-
--mAP50: 0.784
+-mAP50: 0.793
 
 
 ## PR curve
@@ -55,7 +51,7 @@ Prune 후 성능지표
 
 
 # 실행방법
-- train.py --data (data.yaml의 경로) --cfg (yolov5s.yaml의 경로) --weights (yolov5s.pt의 경로) --batch-size 16 --epochs 50
+- python detect.py source --0 --data (data.yaml의 경로) --cfg (yolov5s.yaml의 경로) --weights (yolov5s.pt의 경로) --batch-size 16 --epochs 50
 
 
 기존 모델 출처: https://github.com/ultralytics/yolov5
