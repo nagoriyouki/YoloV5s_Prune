@@ -1,5 +1,5 @@
 train: "/path/train"
-val: "/path//valid"
+val: "/path/valid"
 test: "/path/test"
 
 nc: 4
