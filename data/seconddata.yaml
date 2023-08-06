@@ -1,6 +1,6 @@
-train: "C:/Users/DS/Downloads/crosswalk_bollard_trafficlight.v4i.yolov5pytorch/train"
-val: "C:/Users/DS/Downloads/crosswalk_bollard_trafficlight.v4i.yolov5pytorch/valid"
-test: "C:/Users/DS/Downloads/crosswalk_bollard_trafficlight.v4i.yolov5pytorch/test"
+train: "/path/train"
+val: "/path//valid"
+test: "/path/test"
 
 nc: 4
 names: ['bollard', 'crosswalk', 'greenlight', 'redlight']
