@@ -51,6 +51,6 @@ Prune 후 성능지표
 
 # 실행방법
 - pip install -r requirements.txt
-- python detect.py --source 0 --weights runs/train/exp/weights/best.pt --data (data.yaml 경로)
+- python detect.py --source 0 --weights /path/best.pt --data /path/seconddata.yaml
 
 기존 모델 출처: https://github.com/ultralytics/yolov5
