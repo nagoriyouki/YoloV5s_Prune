@@ -1,0 +1,13 @@
+train: "C:/Users/DS/Downloads/crosswalk_bollard_trafficlight.v4i.yolov5pytorch/train"
+val: "C:/Users/DS/Downloads/crosswalk_bollard_trafficlight.v4i.yolov5pytorch/valid"
+test: "C:/Users/DS/Downloads/crosswalk_bollard_trafficlight.v4i.yolov5pytorch/test"
+
+nc: 4
+names: ['bollard', 'crosswalk', 'greenlight', 'redlight']
+
+roboflow:
+  workspace: project-0stnh
+  project: crosswalk_bollard_trafficlight
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/project-0stnh/crosswalk_bollard_trafficlight/dataset/4
