@@ -53,4 +53,5 @@ Prune 후 성능지표
 - pip install -r requirements.txt
 - python detect.py --source 0 --weights /path/best.pt --data /path/seconddata.yaml
 
+데이터셋 다운로드: kaggle datasets download -d juhyehyeon/crosswalk-bollard-trafficlight
 기존 모델 출처: https://github.com/ultralytics/yolov5
