@@ -40,7 +40,7 @@ Prune 후 성능지표
 -
 -mAP50: 0.793
 -
-|class|Images|Instances|P|R|mAP|
+|:class:|:Images:|:Instances:|:P:|:R:|:mAP:|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |all|1608|2156|0.726|0.796|0.793|
 |bollard|1608|731|0.82|0.722|0.803|
