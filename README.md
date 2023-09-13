@@ -46,7 +46,7 @@ Prune 후 성능지표
 |bollard|1608|731|0.82|0.722|0.803|
 |crosswalk|1608|752|0.68|0.856|0.826|
 |greenlight|1608|349|0.723|0.83|0.801|
--
+
 ## PR curve
 
 ![KakaoTalk_20230729_005518984](https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/4e8a756d-8ea0-4b15-9084-d7f03682a524)
