@@ -17,7 +17,7 @@
 
 경량화 결과
 -
-[Prune 전]
+[Prune 후 Detect.py 실행결과]
 
 - 레이어 수: 157개
 - 매개변수 수: 7,225,885개
@@ -25,19 +25,28 @@
 - 연산량: 16.4 GFLOPs
 
 
-[Prune 후]
+[Prune 후 Detect.py 실행결과]
 
 - 레이어 수: 157개
 - 매개변수 수: 1,189,625개
 - 그래디언트 수: 0개
 - 연산량: 3.2 GFLOPs
 
+[Pruned_weight.pt]
+- YOLOv5s summary: 214 layers, 1193553 parameters, 1193553 gradients, 3.3 GFLOPs
+
 
 Prune 후 성능지표
 -
 -mAP50: 0.793
-
-
+-
+|class|Images|Instances|P|R|mAP|
+|------|---|---|---|---|---|
+|all|1608|2156|0.726|0.796|0.793|
+|bollard|1608|731|0.82|0.722|0.803|
+|crosswalk|1608|752|0.68|0.856|0.826|
+|greenlight|1608|349|0.723|0.83|0.801|
+-
 ## PR curve
 
 ![KakaoTalk_20230729_005518984](https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/4e8a756d-8ea0-4b15-9084-d7f03682a524)
