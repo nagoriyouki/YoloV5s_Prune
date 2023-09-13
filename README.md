@@ -50,8 +50,13 @@ Prune 후 성능지표
 
 
 # 실행방법
+[detect.py]
 - pip install -r requirements.txt
 - python detect.py --source 0 --weights /path/best.pt --data /path/seconddata.yaml
+
+# Pre-trained 모델 로드 방법
+loaded_model = Model('path/to/your/yolov5s.yaml')  # Create a new instance of your model structure.
+loaded_model.load_state_dict(torch.load('prune_weights.pt'))  # Load saved weights into this instance.
 
 데이터셋 다운로드: kaggle datasets download -d juhyehyeon/crosswalk-bollard-trafficlight
 기존 모델 출처: https://github.com/ultralytics/yolov5
