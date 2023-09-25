@@ -33,7 +33,7 @@
 - 연산량: 3.2 GFLOPs
 
 [Pruned_weight.pt]
-- YOLOv5s summary: 214 layers, 1193553 parameters, 1193553 gradients, 3.3 GFLOPs
+- YOLOv5s summary: 214 layers, 1193553 parameters, 0 gradients, 3.3 GFLOPs
 
 
 Prune 후 성능지표
