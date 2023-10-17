@@ -81,17 +81,17 @@
 ## PR curve
 
 <p align="center">
-  <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/397839f0-58a4-47fd-9fef-26ac161f0d5c">
+  <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/a90d04b3-bbc9-4737-bdcd-6701e3112221">
 </p>
 
 ## P-curve
 <p align="center">
-  <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/94b55951-26c9-4267-96da-d198724e4de8">
+  <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/38575484-f9d6-4715-8de2-16d136a6032b">
 </p>
 
 ## R-curve
 <p align="center">
-  <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/d80c08fe-e788-4824-869c-b76f4060e158">
+  <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/2f315e05-a687-44d4-9f6a-a974b0f1a409">
 </p>
 
 # 실행방법
