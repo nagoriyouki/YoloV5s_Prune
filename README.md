@@ -2,7 +2,6 @@
 *웹캠을 통해 실시간으로 촬영되는 영상에서 볼라드, 횡단보도, 보행자 신호등 식별
 
 
-
 모델 및 경량화 방법: YoloV5s / Prune
 -
 
@@ -10,10 +9,6 @@
 
 
 * BatchNorm2d 프루닝: 약 30%만큼의 가중치 제거
-
-
--> 최종적으로 전체 가중치의 약 58% 제거
-
 
 경량화 결과
 -
@@ -36,7 +31,7 @@
 - YOLOv5s summary: 214 layers, 1193553 parameters, 0 gradients, 3.3 GFLOPs
 
 
-Prune 후 성능지표
+(.pt) Prune 후 성능지표
 -
 -mAP50: 0.793
 
@@ -50,23 +45,60 @@ Prune 후 성능지표
 
 ## PR curve
 
-![KakaoTalk_20230729_005518984](https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/4e8a756d-8ea0-4b15-9084-d7f03682a524)
+<p align="center">
+  <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/397839f0-58a4-47fd-9fef-26ac161f0d5c">
+</p>
 
 ## P-curve
-![KakaoTalk_20230729_005518984_01](https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/5df60d7a-a121-4033-9c9e-ce81400d43ef)
+<p align="center">
+  <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/94b55951-26c9-4267-96da-d198724e4de8">
+</p>
 
 ## Result
-![KakaoTalk_20230729_051727539](https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/472caaa5-f706-4c17-9ebe-05f15caab0a7)
-
+<p align="center">
+  <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/d80c08fe-e788-4824-869c-b76f4060e158">
+</p>
 
 # 실행방법
 [detect.py]
 - pip install -r requirements.txt
 - python detect.py --source 0 --weights /path/best.pt --data /path/seconddata.yaml
 
-# Pre-trained 모델 로드 방법
-loaded_model = Model('path/to/your/yolov5s.yaml')  # Create a new instance of your model structure.
-loaded_model.load_state_dict(torch.load('prune_weights.pt'))  # Load saved weights into this instance.
+-
+
+(.onnx) Prune 후 성능지표
+-
+-mAP50: 0.789
+
+|class|Images|Instances|P|R|mAP50|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|all|1608|2156|0.735|0.789|0.789|
+|bollard|1608|731|0.857|0.679|0.782|
+|crosswalk|1608|752|0.693|0.864|0.83|
+|greenlight|1608|349|0.704|0.84|0.8|
+|redlight|1608|324|0.687|0.773|0.742|
+
+## PR curve
+
+<p align="center">
+  <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/397839f0-58a4-47fd-9fef-26ac161f0d5c">
+</p>
+
+## P-curve
+<p align="center">
+  <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/94b55951-26c9-4267-96da-d198724e4de8">
+</p>
+
+## R-curve
+<p align="center">
+  <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/d80c08fe-e788-4824-869c-b76f4060e158">
+</p>
+
+# 실행방법
+[detect.py]
+- pip install -r requirements.txt
+- python detect.py --source 0 --weights /path/best_cpu.onnx --data /path/seconddata.yaml
+
 
 데이터셋 다운로드: kaggle datasets download -d juhyehyeon/crosswalk-bollard-trafficlight
 기존 모델 출처: https://github.com/ultralytics/yolov5
