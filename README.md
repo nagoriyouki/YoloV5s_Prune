@@ -64,7 +64,6 @@
 - pip install -r requirements.txt
 - python detect.py --source 0 --weights /path/best.pt --data /path/seconddata.yaml
 
--
 
 (.onnx) Prune 후 성능지표
 -
