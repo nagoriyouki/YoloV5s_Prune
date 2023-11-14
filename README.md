@@ -117,10 +117,10 @@ mAP50: 0.789
 
 # 실행방법
 <strong>[detect.py]</strong>
-▶️ pip install -r requirements.txt
+▶️ pip install -r requirements.txt<br>
 ▶️ python detect.py --source 0 --weights /path/best_cpu.onnx --data /path/seconddata.yaml
 
 
-⬇️<strong>데이터셋 다운로드</strong>: kaggle datasets download -d juhyehyeon/crosswalk-bollard-trafficlight
+⬇️<strong>데이터셋 다운로드</strong>: kaggle datasets download -d juhyehyeon/crosswalk-bollard-trafficlight<br>
 💡<strong>기존 모델 출처</strong>: Jocher, G. (2020). YOLOv5 by Ultralytics (Version 7.0) [Computer software]. https://doi.org/10.5281/zenodo.3908559
 </div>
