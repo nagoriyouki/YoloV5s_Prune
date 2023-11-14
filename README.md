@@ -1,5 +1,5 @@
 # <div align="center"> YoloV5s_Prune </div>
-<div align="center"> <strong>웹캠을 통해 실시간으로 촬영되는 영상에서 볼라드, 횡단보도, 보행자 신호등 식별</strong>
+<div align="center"> <strong>웹캠을 통해 실시간으로 촬영되는 영상에서 볼라드, 횡단보도, 보행자 신호등 식별</strong><br>
 
 <div align="center">
     <div style="display: inline-block; text-align: center;">
@@ -116,11 +116,11 @@ mAP50: 0.789
 </p>
 
 # 실행방법
-<strong>[detect.py]</strong>
+<strong>[detect.py]</strong><br>
 ▶️ pip install -r requirements.txt<br>
 ▶️ python detect.py --source 0 --weights /path/best_cpu.onnx --data /path/seconddata.yaml
 
-
+# 기타
 ⬇️<strong>데이터셋 다운로드</strong>: kaggle datasets download -d juhyehyeon/crosswalk-bollard-trafficlight<br>
 💡<strong>기존 모델 출처</strong>: Jocher, G. (2020). YOLOv5 by Ultralytics (Version 7.0) [Computer software]. https://doi.org/10.5281/zenodo.3908559
 </div>
