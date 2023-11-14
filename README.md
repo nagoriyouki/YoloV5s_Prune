@@ -1,5 +1,5 @@
 # <div align="center"> YoloV5s_Prune </div>
-<div align="center"> <strong>웹캠을 통해 실시간으로 촬영되는 영상에서 볼라드, 횡단보도, 보행자 신호등 식별
+<div align="center"> <strong>웹캠을 통해 실시간으로 촬영되는 영상에서 볼라드, 횡단보도, 보행자 신호등 식별</strong>
 
 <div align="center">
     <div style="display: inline-block; text-align: center;">
@@ -30,7 +30,7 @@ BatchNorm2d 프루닝: 약 30%만큼의 가중치 제거
 
 # ✂️경량화 결과✂️
 
- [Prune 전 Detect.py 실행결과]
+ <strong>[Prune 전 Detect.py 실행결과]</strong>
 
 | 항목 | 값 |
 | --- | --- |
@@ -39,7 +39,7 @@ BatchNorm2d 프루닝: 약 30%만큼의 가중치 제거
 | 그래디언트 수 | 0개 |
 | 연산량 | 16.4 GFLOPs |
 
- [Prune 후 Detect.py 실행결과]
+ <strong>[Prune 후 Detect.py 실행결과]</strong>
 
 | 항목 | 값 |
 | --- | --- |
@@ -116,11 +116,11 @@ mAP50: 0.789
 </p>
 
 # 실행방법
-[detect.py]
+<strong>[detect.py]</strong>
 ▶️ pip install -r requirements.txt
 ▶️ python detect.py --source 0 --weights /path/best_cpu.onnx --data /path/seconddata.yaml
 
 
-⬇️데이터셋 다운로드: kaggle datasets download -d juhyehyeon/crosswalk-bollard-trafficlight
-💡기존 모델 출처: Jocher, G. (2020). YOLOv5 by Ultralytics (Version 7.0) [Computer software]. https://doi.org/10.5281/zenodo.3908559
+⬇️<strong>데이터셋 다운로드</strong>: kaggle datasets download -d juhyehyeon/crosswalk-bollard-trafficlight
+💡<strong>기존 모델 출처</strong>: Jocher, G. (2020). YOLOv5 by Ultralytics (Version 7.0) [Computer software]. https://doi.org/10.5281/zenodo.3908559
 </div>
