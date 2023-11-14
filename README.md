@@ -21,38 +21,43 @@
     </div>
 </div>
 
-모델 및 경량화 방법: YoloV5s / Prune
+🧠모델 및 경량화 방법: YoloV5s / Prune🧠
 -
 
-*Conv2d 레이어 프루닝: 약 40%의 가중치 제거
+Conv2d 레이어 프루닝: 약 40%의 가중치 제거
 
+BatchNorm2d 프루닝: 약 30%만큼의 가중치 제거
 
-* BatchNorm2d 프루닝: 약 30%만큼의 가중치 제거
-
-경량화 결과
+✂️경량화 결과✂️
 -
-[Prune 후 Detect.py 실행결과]
-
-- 레이어 수: 157개
-- 매개변수 수: 7,225,885개
-- 그래디언트 수: 0개
-- 연산량: 16.4 GFLOPs
-
-
-[Prune 후 Detect.py 실행결과]
-
-- 레이어 수: 157개
-- 매개변수 수: 1,189,625개
-- 그래디언트 수: 0개
-- 연산량: 3.2 GFLOPs
+<div style="display: flex; justify-content: space-between;">
+    <div style="width: 45%; text-align: left;">
+        <h2>[Prune 전 Detect.py 실행결과]</h2>
+        | 항목 | 값 |
+        | --- | --- |
+        | 레이어 수 | 157개 |
+        | 매개변수 수 | 7,225,885개 |
+        | 그래디언트 수 | 0개 |
+        | 연산량 | 16.4 GFLOPs |
+    </div>
+    <div style="width: 45%; text-align: left;">
+        <h2>[Prune 후 Detect.py 실행결과]</h2>
+        | 항목 | 값 |
+        | --- | --- |
+        | 레이어 수 | 157개 |
+        | 매개변수 수 | 1,189,625개 |
+        | 그래디언트 수 | 0개 |
+        | 연산량 | 3.2 GFLOPs |
+    </div>
+</div>
 
 [Pruned_weight.pt]
-- YOLOv5s summary: 214 layers, 1193553 parameters, 0 gradients, 3.3 GFLOPs
+📋YOLOv5s summary: 214 layers, 1193553 parameters, 0 gradients, 3.3 GFLOPs
 
 
 (.pt) Prune 후 성능지표
 -
--mAP50: 0.793
+📊mAP50: 0.793
 
 |class|Images|Instances|P|R|mAP50|
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -80,8 +85,8 @@
 
 # 실행방법
 [detect.py]
-- pip install -r requirements.txt
-- python detect.py --source 0 --weights /path/best.pt --data /path/seconddata.yaml
+▶️pip install -r requirements.txt
+▶️python detect.py --source 0 --weights /path/best.pt --data /path/seconddata.yaml
 
 
 (.onnx) Prune 후 성능지표
