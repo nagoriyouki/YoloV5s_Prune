@@ -1,5 +1,5 @@
 # <div align="center"> YoloV5s_Prune </div>
-<div align="center">**웹캠을 통해 실시간으로 촬영되는 영상에서 볼라드, 횡단보도, 보행자 신호등 식별**
+<div align="center"> __웹캠을 통해 실시간으로 촬영되는 영상에서 볼라드, 횡단보도, 보행자 신호등 식별__
 
 <div align="center">
     <div style="display: inline-block; text-align: center;">
