@@ -1,6 +1,25 @@
-# YoloV5s_Prune
-*웹캠을 통해 실시간으로 촬영되는 영상에서 볼라드, 횡단보도, 보행자 신호등 식별
+# <div align="center">YoloV5s_Prune
+*웹캠을 통해 실시간으로 촬영되는 영상에서 볼라드, 횡단보도, 보행자 신호등 식별</div>
 
+<div align="center">
+    <div style="display: inline-block; text-align: center;">
+        <div>⌨️Language⌨️</div>
+        <br>
+        <img src="https://img.shields.io/badge/python-3776AB?style=flat&logo=python&logoColor=white" />
+        <br><br>
+        <div>⚙️Tools⚙️</div>
+        <br>
+        <img src="https://img.shields.io/badge/github-181717?style=flat&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/pycharm-000000?style=flat&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=flat&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/pytorch-EE4C2C?style=flat&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/opencv-5C3EE8?style=flat&logo=python&logoColor=white" />
+        <br><br>
+        <div>📝Portfolio📝</div>
+        <br>
+        <img src="https://img.shields.io/badge/notion-000000?style=flat&logo=python&logoColor=white" />
+    </div>
+</div>
 
 모델 및 경량화 방법: YoloV5s / Prune
 -
