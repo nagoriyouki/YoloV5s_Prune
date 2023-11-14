@@ -1,9 +1,9 @@
 # <div align="center"> YoloV5s_Prune </div>
-<div align="center"> <strong>웹캠을 통해 실시간으로 촬영되는 영상에서 볼라드, 횡단보도, 보행자 신호등 식별</strong><br>
+<div align="center"> <strong>웹캠을 통해 실시간으로 촬영되는 영상에서 볼라드, 횡단보도, 보행자 신호등 식별</strong>
 
 <div align="center">
     <div style="display: inline-block; text-align: center;">
-        <div>⌨️Language⌨️</div>
+        <div><br>⌨️Language⌨️</div>
         <br>
         <img src="https://img.shields.io/badge/python-3776AB?style=flat&logo=python&logoColor=white" />
         <br><br>
