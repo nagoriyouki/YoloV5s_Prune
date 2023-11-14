@@ -21,16 +21,16 @@
     </div>
 </div>
 
-🧠모델 및 경량화 방법: YoloV5s / Prune🧠
--
+# 🧠모델 및 경량화 방법: YoloV5s / Prune🧠
+
 
 Conv2d 레이어 프루닝: 약 40%의 가중치 제거
 
 BatchNorm2d 프루닝: 약 30%만큼의 가중치 제거
 
-✂️경량화 결과✂️
--
-# [Prune 전 Detect.py 실행결과]
+# ✂️경량화 결과✂️
+
+ [Prune 전 Detect.py 실행결과]
 
 | 항목 | 값 |
 | --- | --- |
@@ -39,7 +39,7 @@ BatchNorm2d 프루닝: 약 30%만큼의 가중치 제거
 | 그래디언트 수 | 0개 |
 | 연산량 | 16.4 GFLOPs |
 
-# [Prune 후 Detect.py 실행결과]
+ [Prune 후 Detect.py 실행결과]
 
 | 항목 | 값 |
 | --- | --- |
@@ -49,13 +49,13 @@ BatchNorm2d 프루닝: 약 30%만큼의 가중치 제거
 | 연산량 | 3.2 GFLOPs |
 
 
-[Pruned_weight.pt]
-📋YOLOv5s summary: 214 layers, 1193553 parameters, 0 gradients, 3.3 GFLOPs
+# 📋Pruned_weight.pt📋
+YOLOv5s summary: 214 layers, 1193553 parameters, 0 gradients, 3.3 GFLOPs
 
 
-(.pt) Prune 후 성능지표
--
-📊mAP50: 0.793
+# 📊(.pt) Prune 후 성능지표📊
+
+mAP50: 0.793
 
 |class|Images|Instances|P|R|mAP50|
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -65,18 +65,18 @@ BatchNorm2d 프루닝: 약 30%만큼의 가중치 제거
 |greenlight|1608|349|0.723|0.83|0.801|
 |redlight|1608|324|0.681|0.778|0.745|
 
-## PR curve
+# PR curve
 
 <p align="center">
   <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/397839f0-58a4-47fd-9fef-26ac161f0d5c">
 </p>
 
-## P-curve
+# P-curve
 <p align="center">
   <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/94b55951-26c9-4267-96da-d198724e4de8">
 </p>
 
-## Result
+# Result
 <p align="center">
   <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/d80c08fe-e788-4824-869c-b76f4060e158">
 </p>
@@ -87,9 +87,9 @@ BatchNorm2d 프루닝: 약 30%만큼의 가중치 제거
 ▶️python detect.py --source 0 --weights /path/best.pt --data /path/seconddata.yaml
 
 
-(.onnx) Prune 후 성능지표
--
--mAP50: 0.789
+# 📊(.onnx) Prune 후 성능지표📊
+
+mAP50: 0.789
 
 |class|Images|Instances|P|R|mAP50|
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -99,28 +99,28 @@ BatchNorm2d 프루닝: 약 30%만큼의 가중치 제거
 |greenlight|1608|349|0.704|0.84|0.8|
 |redlight|1608|324|0.687|0.773|0.742|
 
-## PR curve
+# PR curve
 
 <p align="center">
   <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/a90d04b3-bbc9-4737-bdcd-6701e3112221">
 </p>
 
-## P-curve
+# P-curve
 <p align="center">
   <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/38575484-f9d6-4715-8de2-16d136a6032b">
 </p>
 
-## R-curve
+# R-curve
 <p align="center">
   <img src="https://github.com/nagoriyouki/YoloV5s_Prune/assets/130470442/2f315e05-a687-44d4-9f6a-a974b0f1a409">
 </p>
 
 # 실행방법
 [detect.py]
-- pip install -r requirements.txt
-- python detect.py --source 0 --weights /path/best_cpu.onnx --data /path/seconddata.yaml
+▶️ pip install -r requirements.txt
+▶️ python detect.py --source 0 --weights /path/best_cpu.onnx --data /path/seconddata.yaml
 
 
-데이터셋 다운로드: kaggle datasets download -d juhyehyeon/crosswalk-bollard-trafficlight
-기존 모델 출처: Jocher, G. (2020). YOLOv5 by Ultralytics (Version 7.0) [Computer software]. https://doi.org/10.5281/zenodo.3908559
+⬇️데이터셋 다운로드: kaggle datasets download -d juhyehyeon/crosswalk-bollard-trafficlight
+💡기존 모델 출처: Jocher, G. (2020). YOLOv5 by Ultralytics (Version 7.0) [Computer software]. https://doi.org/10.5281/zenodo.3908559
 </div>
