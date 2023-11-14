@@ -3,8 +3,10 @@
 
 <div align="center">
     <div style="display: inline-block; text-align: center;">
-        <div><br>⌨️Language⌨️</div>
+        <div><br>⌨️Platform & Language⌨️</div>
         <br>
+        <img src="https://img.shields.io/badge/raspberrypi-A22846?style=flat&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/logitech-00B8FC?style=flat&logo=python&logoColor=white" />
         <img src="https://img.shields.io/badge/python-3776AB?style=flat&logo=python&logoColor=white" />
         <br><br>
         <div>⚙️Tools⚙️</div>
@@ -14,6 +16,7 @@
         <img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=flat&logo=python&logoColor=white" />
         <img src="https://img.shields.io/badge/pytorch-EE4C2C?style=flat&logo=python&logoColor=white" />
         <img src="https://img.shields.io/badge/opencv-5C3EE8?style=flat&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/yolo-00FFFF?style=flat&logo=python&logoColor=white" />
         <br><br>
         <div>📝Portfolio📝</div>
         <br>
