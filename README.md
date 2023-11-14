@@ -1,4 +1,4 @@
-# <div align="center">YoloV5s_Prune
+# <div align="center"> YoloV5s_Prune
 *웹캠을 통해 실시간으로 촬영되는 영상에서 볼라드, 횡단보도, 보행자 신호등 식별</div>
 
 <div align="center">
@@ -120,3 +120,4 @@
 
 데이터셋 다운로드: kaggle datasets download -d juhyehyeon/crosswalk-bollard-trafficlight
 기존 모델 출처: Jocher, G. (2020). YOLOv5 by Ultralytics (Version 7.0) [Computer software]. https://doi.org/10.5281/zenodo.3908559
+</div>
